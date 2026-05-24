@@ -7,9 +7,9 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?style=flat&logo=tailwindcss&logoColor=white)
 ![Deployed on Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?style=flat&logo=vercel)
 
-**Live Demo:** [coming soon — deploying now]  
+**Live Demo:** https://hirelens-ai-sigma.vercel.app  
+**Backend API:** https://hirelens-backend-s2sg.onrender.com  
 **Backend Repo:** [hirelens-backend](https://github.com/Yusufcommit/hirelens-backend)
-
 ---
 
 ## What It Does
