@@ -8,8 +8,9 @@
 ![Deployed on Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?style=flat&logo=vercel)
 
 **Live Demo:** https://hirelens-ai-sigma.vercel.app  
-**Backend API:** https://hirelens-backend-s2sg.onrender.com  
-**Backend Repo:** [hirelens-backend](https://github.com/Yusufcommit/hirelens-backend)
+**Backend Repo:** [hirelens-backend](https://github.com/Yusufcommit/hirelens-backend)  
+**Live API:** https://hirelens-backend-s2sg.onrender.com
+
 ---
 
 ## What It Does
@@ -90,6 +91,7 @@ hirelens-ai/
 - [x] Dashboard with resume upload and job description input
 - [x] Candidate ranking results with score bars
 - [x] Missing skills display per candidate
+- [x] Production deployment on Vercel
 - [ ] Loading animations and skeleton states
 - [ ] Candidate detail modal
 - [ ] Authentication (NextAuth)
