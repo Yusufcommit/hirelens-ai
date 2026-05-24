@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# HireLens AI — Frontend
 
-## Getting Started
+> The Next.js frontend for HireLens AI, an AI-powered resume screening and candidate ranking platform.
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?style=flat&logo=tailwindcss&logoColor=white)
+![Deployed on Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?style=flat&logo=vercel)
+
+**Live Demo:** [coming soon — deploying now]  
+**Backend Repo:** [hirelens-backend](https://github.com/Yusufcommit/hirelens-backend)
+
+---
+
+## What It Does
+
+HireLens AI helps recruiters screen and rank candidates intelligently. Upload multiple resumes, paste a job description, and get an AI-ranked list of candidates with match scores, missing skills, and explainable breakdowns — in seconds.
+
+---
+
+## Pages
+
+| Route | Description |
+|---|---|
+| `/` | Landing page — hero, features, how it works |
+| `/dashboard` | Main product — upload resumes, paste JD, view ranked results |
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | Next.js 15 (App Router) |
+| Language | TypeScript |
+| Styling | Tailwind CSS |
+| State | React hooks |
+| API | FastAPI (see backend repo) |
+| Deployment | Vercel |
+
+---
+
+## Run Locally
 
 ```bash
+# 1. Clone the repo
+git clone https://github.com/Yusufcommit/hirelens-ai.git
+cd hirelens-ai
+
+# 2. Install dependencies
+npm install
+
+# 3. Set environment variable
+echo "NEXT_PUBLIC_API_URL=http://localhost:8000" > .env.local
+
+# 4. Start dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+> Make sure the [backend](https://github.com/Yusufcommit/hirelens-backend) is also running on port 8000.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+hirelens-ai/
+├── src/
+│   └── app/
+│       ├── page.tsx              # Landing page
+│       ├── dashboard/
+│       │   └── page.tsx          # Dashboard product page
+│       └── components/
+│           ├── Navbar.tsx
+│           ├── Features.tsx
+│           ├── HowItWorks.tsx
+│           └── Footer.tsx
+├── public/
+├── tailwind.config.ts
+└── next.config.ts
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Roadmap
 
-## Deploy on Vercel
+- [x] Landing page with hero, features, how it works
+- [x] Dashboard with resume upload and job description input
+- [x] Candidate ranking results with score bars
+- [x] Missing skills display per candidate
+- [ ] Loading animations and skeleton states
+- [ ] Candidate detail modal
+- [ ] Authentication (NextAuth)
+- [ ] Screening history saved per user
+- [ ] Mobile responsive polish
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Related
+
+- **Backend API:** [hirelens-backend](https://github.com/Yusufcommit/hirelens-backend)
+- **Original prototype:** [ai-resume-screening-system](https://github.com/Yusufcommit/ai-resume-screening-system)
+
+---
+
+## Built by Yusuf
+
+**Yusuf Abdirashid** — AI Full Stack Developer  
+Building polished AI-powered tools for hiring and job applications.
+
+[![GitHub](https://img.shields.io/badge/GitHub-Yusufcommit-181717?style=flat&logo=github)](https://github.com/Yusufcommit)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Yusuf_Abdirashid-0A66C2?style=flat&logo=linkedin)](https://tr.linkedin.com/in/yusuf-abdirashid)
+[![Email](https://img.shields.io/badge/Email-yusufabdirashid100@gmail.com-EA4335?style=flat&logo=gmail)](mailto:yusufabdirashid100@gmail.com)
